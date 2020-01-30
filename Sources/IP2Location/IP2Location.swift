@@ -105,7 +105,7 @@ final public class IP2Location {
         return search(address: addesss, slice: self.database[0..<self.database.endIndex])
     }
     
-    func get(_ address: String) -> Location? {
+    public func get(_ address: String) -> Location? {
         var addr = in_addr()
         if inet_pton(AF_INET, address, &addr) == 1 {
             return self.get(addr)
@@ -114,7 +114,7 @@ final public class IP2Location {
         return nil
     }
     
-    func get(_ address: in_addr) -> Location? {
+    public func get(_ address: in_addr) -> Location? {
         return self.get(address.s_addr.bigEndian)
     }
     
