@@ -2,14 +2,14 @@ import SwiftCSV
 import Foundation
 
 public struct Location : CustomStringConvertible {
-    let from : UInt32
-    let to: UInt32
-    let iso: String
-    let country: String
-    let region : String
-    let city : String
-    let latitude : Double
-    let longitude : Double
+    public let from : UInt32
+    public let to: UInt32
+    public let iso: String
+    public let country: String
+    public let region : String
+    public let city : String
+    public let latitude : Double
+    public let longitude : Double
     
     public var description: String {
         return "from: \(from), to: \(from), iso: \(iso), name: \(country), region: \(region), city: \(city)"
