@@ -15,7 +15,6 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
          .package(url: "https://github.com/swiftcsv/SwiftCSV.git", from: "0.5.5"),
-         .package(path: "../Test-Resources"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
