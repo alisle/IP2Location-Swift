@@ -17,7 +17,7 @@ public struct Location : CustomStringConvertible {
     }
 }
 
-public struct IP2LocationRecord : CustomStringConvertible {
+public struct IP2LocationRecord : CustomStringConvertible, Codable {
     public let iso : Optional<String>
     public let country : Optional<String>
     public let region : Optional<String>
